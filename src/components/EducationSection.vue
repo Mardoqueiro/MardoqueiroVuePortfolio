@@ -8,11 +8,11 @@
                 </p> -->
                 <div class="row gap-2 justify-content-center" v-if="education?.length">
                   <Card v-for="ed in education" :key="ed.id">
-                    <template #cardheader>
+                    <template #cardHeader>
                         <img loading="lazy" class="img-fluid">
                         <box-icon type='solid' name='school'></box-icon>
                     </template>
-                    <template #cardbody>
+                    <template #cardBody>
                         <h5 class="card-title">{{ ed.name }}
                         </h5>
                         <p class="shadow">Duration: {{ ed.duration }}</p>

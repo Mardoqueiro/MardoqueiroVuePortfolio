@@ -9,10 +9,10 @@
                 </p>
                 <div class="row gap-2 justify-content-center" v-if="testimonials?.length">
                   <Card v-for="testimonial in testimonials" :key="testimonial.id">
-                    <template #cardheader>
+                    <template #cardHeader>
                         <img :src="testimonial.profile" :alt="testimonial.name" loading="lazy" class="img-fluid">
                     </template>
-                    <template #cardbody>
+                    <template #cardBody>
                         <h5 class="card-title">{{ testimonial.name }}
                         </h5>
                         <p class="shadow">{{ testimonial.quotes }}</p>

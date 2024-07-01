@@ -15,11 +15,11 @@
     <section class="row" id="skills">
       <SkillSection/>
     </section>
-    <section class="row" id="testimonial">
-      <TestimonialSection/>
-    </section>
     <section class="row" id="project">
       <ProjectSection/>
+    </section>
+    <section class="row" id="testimonial">
+      <TestimonialSection/>
     </section>
     <section class="row" id="reachMe">
 

@@ -8,10 +8,10 @@
                   </p>
                   <div class="row gap-2 justify-content-center" v-if="projects?.length">
                   <Card v-for="proj in projects" :key="proj.id">
-                    <template #cardheader>
+                    <template #cardHeader>
                         <img :src="proj.image" :alt="proj.name" loading="lazy" class="img-fluid">
                     </template>
-                    <template #cardbody>
+                    <template #cardBody>
                         <h5 class="card-title">{{ proj.name }}
                         </h5>
                         <p class="shadow">{{ proj.description }}</p>

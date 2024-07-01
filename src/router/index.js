@@ -29,13 +29,13 @@ const routes = [
     component: () => import('@/views/HomeView.vue')
   },
   {
-    path: '/testimonials',
-    name: 'testimonials',
+    path: '/project',
+    name: 'project',
     component: () => import('@/views/HomeView.vue')
   },
   {
-    path: '/project',
-    name: 'project',
+    path: '/testimonials',
+    name: 'testimonials',
     component: () => import('@/views/HomeView.vue')
   },
   {
