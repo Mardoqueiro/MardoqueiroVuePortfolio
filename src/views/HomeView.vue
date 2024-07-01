@@ -6,13 +6,9 @@
     <section class="row" id="about">
       <AboutSection/>
     </section>
-    <section class="row" id="education">
+    <section class="row" id="resume">
       <EducationSection/>
-    </section>
-    <section class="row" id="experience">
       <ExperienceSection/>
-    </section>
-    <section class="row" id="skills">
       <SkillSection/>
     </section>
     <section class="row" id="project">
