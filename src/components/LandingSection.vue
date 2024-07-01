@@ -2,9 +2,6 @@
     <div class="container">
         <div class="row vh-100 align-items-center">
             <div class="col">
-                <img src="https://mardoqueiro.github.io/all_images/Vue.EOMP/Portfolio.images/portfolio.bgRemoved.png" alt="profile" class="img-fluid" loading="lazy">
-            </div>
-            <div class="col">
                 <div id="details">
                     <h1 class="display-1">Mardoqueiro D Lukembeladio</h1>
                     <p v-if="title">
@@ -17,6 +14,9 @@
                     </p> -->
                     
                 </div>
+            </div>
+            <div class="col">
+                <img src="https://mardoqueiro.github.io/all_images/Vue.EOMP/Portfolio.images/portfolio.bgRemoved.png" alt="profile" class="img-fluid" loading="lazy">
             </div>
         </div>
     </div>
