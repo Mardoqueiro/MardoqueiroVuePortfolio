@@ -8,10 +8,10 @@
                   </p>
                   <div class="row gap-2 justify-content-center" v-if="skills?.length">
                   <Card v-for="skills in skills" :key="skills.id">
-                    <template #cardheader>
+                    <template #cardHeader>
                         <img :src="skills.profile" loading="lazy" class="img-fluid">
                     </template>
-                    <template #cardbody>
+                    <template #cardBody>
                         <h5 class="card-title">{{ skills.title }}
                         </h5>
                         <p class="shadow">{{ skills.experience }}</p>

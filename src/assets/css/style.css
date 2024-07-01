@@ -34,10 +34,10 @@
 
 /* CUSTOM VARIABLES */
 :root {
-  --bg-color: #FFDA78;
-    --main-color: #FF7F3E;
-    --text-color: #003285;
-    --other-color: #2A629A;
+  --bg-color: #0A0F24;
+  --second-bg-color: #17182E;
+  --text-color: #F9F2F2;
+  --main-color: #F5CB86;
 
 }
 ::-webkit-scrollbar {
@@ -70,6 +70,34 @@ p {
   margin: 0;
 }
 
+section {
+  min-height: 100vh;
+  padding: 10rem 9% 2rem;
+}
+
+section[class^="container"] {
+  padding: 4rem 2rem;
+}
+@media screen and (min-width: 1024px) {
+  section[class^="container"] {
+      padding: 4rem;
+  }
+  nav [class^="container"] {
+      padding: 0 4rem;
+  }
+}
+
+section:not(:first-of-type){
+  text-align: center;
+}
+
+section:nth-child(2n){
+  background-color: #0A0F24;
+}
+
+img{
+  object-fit: contain;
+  }
 /* #about {
   
 } */

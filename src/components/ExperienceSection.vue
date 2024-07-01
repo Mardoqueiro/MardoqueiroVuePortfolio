@@ -8,10 +8,10 @@
                 </p>
                 <div class="row gap-2 justify-content-center" v-if="experiences?.length">
                   <Card v-for="exp in experiences" :key="exp.id">
-                    <template #cardheader>
+                    <template #cardHeader>
                         <img :src="exp.profile" loading="lazy" class="img-fluid">
                     </template>
-                    <template #cardbody>
+                    <template #cardBody>
                         <h5 class="card-title">{{ exp.companyName }}
                         </h5>
                         <p class="shadow">{{ exp.quotes }}</p>
