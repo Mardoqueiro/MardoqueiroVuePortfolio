@@ -10,16 +10,16 @@
       <EducationSection/>
     </section>
     <section class="row" id="experience">
-      <ExperiencesSection/>
+      <ExperienceSection/>
     </section>
     <section class="row" id="skills">
-      <SkillsSection/>
+      <SkillSection/>
     </section>
     <section class="row" id="testimonial">
-      <TestimonialsSection/>
+      <TestimonialSection/>
     </section>
     <section class="row" id="project">
-      <ProjectsSection/>
+      <ProjectSection/>
     </section>
     <section class="row" id="reachMe">
 
@@ -32,10 +32,10 @@
 import LandingSection from '@/components/LandingSection.vue';
 import AboutSection from '@/components/AboutSection.vue';
 import EducationSection from '@/components/EducationSection.vue';
-import ExperiencesSection from '@/components/ExperiencesSection.vue';
-import SkillsSection from '@/components/SkillsSection.vue';
-import TestimonialsSection from '@/components/TestimonialsSection.vue';
-import ProjectsSection from '@/components/ProjectsSection.vue'
+import ExperienceSection from '@/components/ExperienceSection.vue';
+import SkillSection from '@/components/SkillSection.vue';
+import TestimonialSection from '@/components/TestimonialSection.vue';
+import ProjectSection from '@/components/ProjectSection.vue'
 
 export default {
   name: 'HomeView',
@@ -43,10 +43,10 @@ export default {
     LandingSection,
     AboutSection,
     EducationSection,
-    ExperiencesSection,
-    SkillsSection,
-    TestimonialsSection,
-    ProjectsSection
+    ExperienceSection,
+    SkillSection,
+    TestimonialSection,
+    ProjectSection
   }
 }
 </script>
