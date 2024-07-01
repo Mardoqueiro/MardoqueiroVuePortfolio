@@ -19,4 +19,6 @@ export default {
 .card {
     width: 18rem;
 }
+
+
 </style>
