@@ -4,7 +4,7 @@
           <div class="col">
               <div id="details">
                   <h1 class="display-1">About</h1>
-                  <p v-if="about" class="shadow">
+                  <p v-if="about" class="lead">
                       {{ about }}
                   </p>
                   <Spinner v-else/>
