@@ -9,10 +9,10 @@
                         <span>{{ title }}</span>
                     </p>
                     <Spinner v-else/>
-                    <!-- <p v-if="jobTitle?.length">
-                        <span>{{ jobTitle[0]?.title }}</span>
-                    </p> -->
-                    
+                <div class="social-media">
+                    <a class="social-icon" href="https://www.linkedin.com/feed/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                    <a class="social-icon" href="https://github.com/Mardoqueiro" target="_blank"><i class="bi bi-github"></i></a>
+                </div>
                 </div>
             </div>
             <div class="col">
