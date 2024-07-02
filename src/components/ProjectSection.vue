@@ -3,7 +3,7 @@
       <div class="row">
           <div class="col">
               <div id="details">
-                  <h1 class="display-1">Projects</h1>
+                  <h1 class="display-1" data-aos="fade-right">Projects</h1>
                   <p v-if="projects">
                   </p>
                   <div class="row gap-2 justify-content-center" v-if="projects?.length">
@@ -17,12 +17,12 @@
                         <p class="shadow">{{ proj.description }}</p>
                         <p class="lead">
                             <button>
-                            <a :href="proj.gitHub" target="_blank">
+                            <a class="icon1" :href="proj.gitHub" target="_blank">
                                 <i class="bi bi-github"></i>
                             </a>
                         </button>
                         <button>
-                            <a :href="proj.vercel" target="_blank">
+                            <a class="icon1" :href="proj.vercel" target="_blank">
                                 <i class="bi bi-triangle-fill"></i>
                             </a>
                         </button>
@@ -51,6 +51,10 @@
   </script>
   
   
-  <style>
-  
-  </style>
+<style scoped>
+    /* @media screen and (width > 800px) {
+    card {
+        flex-direction: column;
+    }
+} */
+</style>

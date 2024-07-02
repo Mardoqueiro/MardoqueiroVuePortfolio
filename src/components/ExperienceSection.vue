@@ -3,9 +3,10 @@
       <div class="row">
           <div class="col">
             <div id="details">
-                <h1 class="display-1">Experiences</h1>
+                <!-- <h1 class="display-1">Experiences</h1> -->
                 <p v-if="experiences">
                 </p>
+                <h3>Experiences</h3>
                 <div class="row gap-2 justify-content-center" v-if="experiences?.length">
                   <Card v-for="exp in experiences" :key="exp.id">
                     <template #cardHeader>

@@ -3,13 +3,14 @@
       <div class="row">
           <div class="col">
               <div id="details">
-                  <h1 class="display-1">Skills</h1>
+                  <!-- <h1 class="display-1">Skills</h1> -->
                   <p v-if="skills">
                   </p>
+                  <h3>Skills</h3>
                   <div class="row gap-2 justify-content-center" v-if="skills?.length">
                   <Card v-for="skills in skills" :key="skills.id">
                     <template #cardHeader>
-                        <img :src="skills.profile" loading="lazy" class="img-fluid">
+                        <img :src="skills.image" loading="lazy" class="img-fluid">
                     </template>
                     <template #cardBody>
                         <h5 class="card-title">{{ skills.title }}
