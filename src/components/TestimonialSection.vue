@@ -3,7 +3,7 @@
       <div class="row">
           <div class="col">
             <div id="details">
-                <h1 class="display-1">Testimonials</h1>
+                <h1 class="display-1" data-aos="fade-left">Testimonials</h1>
                 <p v-if="testimonials">
                 
                 </p>

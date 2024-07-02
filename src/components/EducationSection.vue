@@ -3,20 +3,19 @@
       <div class="row">
           <div class="col">
             <div id="details">
-                <h1 class="display-1">Education</h1>
+                <h1 class="display-1" data-aos="fade-right">Resume</h1>
                 <!-- <p v-if="education">
                 </p> -->
+                <h3>Education</h3>
                 <div class="row gap-2 justify-content-center" v-if="education?.length">
                   <Card v-for="ed in education" :key="ed.id">
                     <template #cardHeader>
-                        <img loading="lazy" class="img-fluid">
-                        <box-icon type='solid' name='school'></box-icon>
+                      <img :src="ed.image" :alt="ed.name" loading="lazy" class="img-fluid">
                     </template>
                     <template #cardBody>
                         <h5 class="card-title">{{ ed.name }}
                         </h5>
                         <p class="shadow">Duration: {{ ed.duration }}</p>
-                        <!-- <p class="shadow">R {{ education.amount }}</p> -->
                     </template>
                   </Card>
                 </div>
@@ -40,7 +39,5 @@
   })
   </script>
   
-  
-  <style>
-  
-  </style>
+
+<style> </style>

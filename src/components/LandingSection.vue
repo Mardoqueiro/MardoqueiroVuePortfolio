@@ -3,15 +3,15 @@
         <div class="row vh-100 align-items-center">
             <div class="col">
                 <div id="details">
-                    <h1 class="display-1">Mardoqueiro D Lukembeladio</h1>
+                    <h1 class="display-1" data-aos="fade-right">Mardoqueiro D Lukembeladio</h1>
                     <p v-if="title">
                         I am
                         <span>{{ title }}</span>
                     </p>
                     <Spinner v-else/>
                 <div class="social-media">
-                    <a class="social-icon" href="https://www.linkedin.com/feed/" target="_blank"><i class="bi bi-linkedin"></i></a>
-                    <a class="social-icon" href="https://github.com/Mardoqueiro" target="_blank"><i class="bi bi-github"></i></a>
+                    <a class="icon" href="https://www.linkedin.com/feed/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                    <a class="icon" href="https://github.com/Mardoqueiro" target="_blank"><i class="bi bi-github"></i></a>
                 </div>
                 </div>
             </div>

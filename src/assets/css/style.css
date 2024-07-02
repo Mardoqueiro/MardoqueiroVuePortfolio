@@ -23,51 +23,53 @@
       display: none;
   }
 
+  html {
+    font-size: 100%;
+    /* overflow-x: hidden; */
+}
+
   body {
     background-color: var(--bg-color);
     color: var(--text-color);
+    margin: 0;
+    padding: 0;
   }
 
   /* NAVBAR */
   nav {
     padding: 30px;
   }
-  
+
   nav a {
     font-weight: bold;
     color: var(--second-bg-color);
   }
-  
+
   nav a.router-link-exact-active {
     color: var(--bg-color);
   }
 
   .navbar {
-    background-color: var(--bg-color); /* Adjust the background color if needed */
+    background-color: var(--bg-color);
   }
-  
+
   .navbar-nav {
-    margin: auto; /* Centers the navbar items */
+    margin: auto;
   }
-  
+
   .nav-link {
-    color: whitesmoke; /* White text */
-    transition: color 0.3s; /* Smooth transition for hover effect */
+    color: whitesmoke;
+    transition: color 0.3s;
   }
-  
+
   .nav-link:hover,
   .nav-link:active {
-    color: gold; /* Gold text on hover or active */
+    color: var(--main-color);
   }
-  
+
   .navbar-toggler {
-    border-color: white; /* Optional: White border for the toggler icon */
+    border-color: var(--main-color);
   }
-  
-  .navbar-toggler-icon {
-    background: var(--text-color);
-  }
-  
 
 /* UNIVERCAL SELECTOR */
 *,
@@ -85,53 +87,13 @@ h1 {
 
 p {
   font-family: 'Poppins', sans-serif;
+  color: var(--main-color);
 }
 
 .container-fluid {
   padding: 0;
   margin: 0;
 }
-
-/* SOCIAL MEDIA */
-.social-media {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem 0;
-}
-
-/* General Social Media Icon Styling */
-.social-icon {
-  color: var(--bg-color);
-  background-color: var(--main-color); /* Default background color */
-  border-radius: 100%;
-  padding: 1rem;
-  margin: 0 1rem;
-  font-size: 1.5rem;
-  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
-  text-decoration: none;
-}
-
-/* Hover Effects for Icons */
-.social-icon:hover {
-  transform: scale(1.1);
-  background-color: #ffffff;
-  color: var(--main-color); /* Default text color on hover */
-}
-/* Image Styling */
-img {
-  object-fit: contain;
-}
-
-/* LANDING SECTION */
-#landing .row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  height: 100vh;
-  align-items: center;
-}
- 
-/* CUSTOM STYLES */
 
 /* BUTTONS */
 button {
@@ -153,157 +115,241 @@ button:hover {
 
 /* SELECT ALL IMAGES */
 img {
-    aspect-ratio: 1;
-    object-fit: cover;
-    object-position: center;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center;
 }
 /* LOGO */
 img[alt="logo"] {  
-    width: 5rem;
+  width: 5rem;
 }
 /* WRAPPER */
 :is(.wrapper) {
-  display: grid;
-  grid-template-rows: auto minmax(100dvh, 100%) auto;
+display: grid;
+grid-template-rows: auto minmax(100dvh, 100%) auto;
+grid-template-columns: 1fr;
+grid-template-areas:
+  "header"
+  "main"
+  "footer";
+}
+
+/* ICON */
+.icon {
+  color: var(--main-color); 
+}
+.icon1 {
+  color: var(--second-bg-color); 
 }
 
 /* SECTION */
-section {
-  scroll-margin: 10rem;
+.section-style {
+  padding: 50px 20px;
+  margin: 20px 0;
+  border-radius: 10px;
 }
 
-section {
-  min-height: 90vh;
-  padding: 1rem 5% 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transition: background-color 0.3s ease-in-out;
-}
-
-/* Container Class Styling */
-section[class^="container"] {
-  padding: 4rem 2rem;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* Responsive Design for Larger Screens */
-@media screen and (min-width: 1024px) {
-  section[class^="container"] {
-    padding: 4rem;
-  }
-  nav [class^="container"] {
-    padding: 0 4rem;
-  }
-}
-
-/* Center Text for Sections Except the First One */
-section:not(:first-of-type) {
+#landing {
+  background-color: var(--bg-color);
   text-align: center;
 }
 
-/* Alternate Background Colors for Even Sections */
-section:nth-child(2n) {
-  background-color: #0A0F24;
-  color: #ffffff;
+#about {
+  background-color: var(--second-bg-color);
 }
 
+#resume {
+  background-color: var(--bg-color);
+}
 
-/* MEDIA QUERIES */
-@media screen and (width < 720px ) {
-  #landing .row {
-    display: block;
-    height: auto;
+#project {
+  background-color: var(--second-bg-color);
+}
+
+#testimonial {
+  background-color: var(--bg-color);
+}
+
+#reachMe {
+  background-color: var(--bg-color);
+}
+
+.section-style h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+  text-transform: uppercase;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.section-style p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .section-style {
+    padding: 30px 10px;
   }
+}
+
+/* CARDS */
+.card {
+  width: 300px; /* Set your desired width */
+  background-color: #fff;
+  border: 1px solid #ddd; /* Border color and thickness */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+  transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
+  overflow: hidden; /* Hide overflow content */
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd; /* Optional border for the image */
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card-text {
+  font-size: 1.1em;
+  color: #666;
+  line-height: 1.4;
+}
+
+.card-link {
+  display: inline-block;
+  color: #007bff; /* Link color */
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.card-link:hover {
+  text-decoration: underline; /* Underline on hover */
 }
 
 /* CONTACT */
-.contact {
-  padding: 6rem 0;
-}
-
-.contact h1 {
-  font-size: 3rem;
-  margin-bottom: 3rem;
-  text-align: center;
-}
-
-.contact h2 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  text-align: center;
-}
-
-.contact .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start; /* Adjust alignment as needed */
-}
-
-.contact-info {
-  flex: 1;
-  padding-right: 2rem;
-}
-
-.contact-info h2 {
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-}
-
-.contact-info p {
-  font-size: 1.6rem;
-  line-height: 1.5;
-  color: #666;
-}
-
-.contact-form {
-  flex: 1;
-  max-width: 70rem;
+.container-1 {
+  padding: 50px 20px;
+  background-color: var(--second-bg-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
   margin: 0 auto;
 }
 
-.contact form {
-  text-align: left; /* Align form elements to the left */
+/* Row styling */
+/* .row {
+  margin-bottom: 30px;
+} */
+
+.text-center {
+  text-align: center;
 }
 
-.contact form .input-box {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
+/* Contact details styling */
+.contact-info {
+  padding: 20px;
+  background-color: var(--bg-color);
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
 }
 
-.contact form .input-box input,
-.contact form textarea {
-  width: calc(50% - 0.5rem); /* Adjust width and gap */
-  padding: 1rem;
-  font-size: 1.6rem;
+.contact-info h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
   color: #333;
-  background: #f5f5f5;
-  border: 1px solid #ccc;
-  border-radius: 0.8rem;
-  margin-bottom: 1rem;
 }
 
-.contact form .input-box textarea {
-  width: 100%; /* Full width for textarea */
-  resize: vertical; /* Allow vertical resizing */
+.contact-info p {
+  font-size: 1.2em;
+  color: var();
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
 }
 
-.contact form .btn {
-  width: 100%;
-  padding: 1rem;
-  background-color: #F5CB86;
-  color: #0A0F24;
+.contact-info p i {
+  margin-right: 10px;
+  color: var(--main-color);
+}
+
+/* Contact form styling */
+.contact-form {
+  padding: 20px;
+  background-color: var(--second-bg-color);
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 5px;
+  font-size: 1.1em;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid var(--main-color);
+  border-radius: 5px;
+  font-size: 1.1em;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--main-color);
+  outline: none;
+}
+
+.contact-form button {
+  padding: 10px 20px;
   border: none;
-  font-size: 1.6rem;
-  border-radius: 20px;
+  border-radius: 5px;
+  background-color: var(--main-color);
+  color: white;
+  font-size: 1.1em;
   cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s ease;
 }
 
-.contact form .btn:hover {
-  background-color: #e5b870; /* Darker shade on hover */
+.contact-form button:hover {
+  background-color: var(--text-color);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .contact-info, .contact-form {
+    margin-bottom: 20px;
+  }
+
+  .container {
+    padding: 30px 10px;
+  }
 }
