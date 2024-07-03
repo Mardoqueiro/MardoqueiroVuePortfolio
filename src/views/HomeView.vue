@@ -7,6 +7,7 @@
       <AboutSection/>
     </section>
     <section class="row" id="resume">
+      <ResumeSection/>
       <EducationSection/>
       <ExperienceSection/>
       <SkillSection/>
@@ -20,6 +21,9 @@
     <section class="row" id="reachMe">
       <ReachMeSection/>
     </section>
+
+    
+
   </div>
 </template>
 
@@ -32,7 +36,8 @@ import ExperienceSection from '@/components/ExperienceSection.vue';
 import SkillSection from '@/components/SkillSection.vue';
 import TestimonialSection from '@/components/TestimonialSection.vue';
 import ProjectSection from '@/components/ProjectSection.vue';
-import ReachMeSection from '@/components/ReachMeSection.vue'
+import ReachMeSection from '@/components/ReachMeSection.vue';
+import ResumeSection from '@/components/ResumeSection.vue';
 
 export default {
   name: 'HomeView',
@@ -44,7 +49,8 @@ export default {
     SkillSection,
     TestimonialSection,
     ProjectSection,
-    ReachMeSection
+    ReachMeSection,
+    ResumeSection
   }
 }
 </script>
