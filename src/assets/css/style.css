@@ -32,6 +32,8 @@
     color: var(--text-color);
     margin: 0;
     padding: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
 
     .blob {
       animation-name: blobby;
@@ -191,14 +193,23 @@ section {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
   font-weight: bolder;
+  animation: slideLeft 1s ease forwards;
+  animation-delay: 1s;
 }
 
-.intro-text h6,
+.intro-text h5,
 .intro-text p {
   margin-bottom: 0.5rem;
   color: var(--text-color);
+  opacity: 0;
+  animation: slideRight 1s ease forwards;
+  animation-delay: 1s;
 }
 
+.intro-text span {
+  color: var(--main-color);
+  
+}
 .social-media {
   margin: 1.5rem 0;
 }
@@ -294,6 +305,18 @@ section {
 ----------------------------------------*/
 
 /*---------------------------------------
+  #RESUME
+----------------------------------------*/
+
+/*---------------------------------------
+  #PROJECTS
+----------------------------------------*/
+
+/*---------------------------------------
+  #TESTIMONIALS
+----------------------------------------*/
+
+/*---------------------------------------
   #BUTTON
 ----------------------------------------*/
 button {
@@ -320,6 +343,8 @@ img {
   aspect-ratio: 1;
   object-fit: cover;
   object-position: center;
+  animation: slideBottom 1s ease forwards;
+  animation-delay: .7s;
 }
 /* LOGO */
 img[alt="logo"] {  
@@ -685,5 +710,79 @@ h6 span{
   box-shadow: 0 8px 24px 0 rgba(16,39,112,.2);
 }
 /*---------------------------------------
-    
+  #Animation
 ----------------------------------------*/
+/*KEYFRAMES ANIMATION */
+@keyframes slideRight {
+  0% {
+      transform: translateX(-100px);
+      opacity: 0;
+  }
+  
+  100% {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+      transform: translateX(100px);
+      opacity: 0;
+  }
+  
+  100% {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+@keyframes slideTop {
+  0% {
+      transform: translateY(100px);
+      opacity: 0;
+  }
+  
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+@keyframes slideBottom {
+  0% {
+      transform: translateY(-100px);
+      opacity: 0;
+  }
+  
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+      transform: scale(0);
+      opacity: 0;
+  }
+  
+  100% {
+      transform: scale(1);
+      opacity: 1;
+  }
+}
+
+@keyframes floatImage {
+  0% {
+      transform: translateY(0);
+  }
+
+  50% {
+      transform: translateY(-24px);
+  }
+
+  100% {
+      transform: translateY(0);
+  }
+}

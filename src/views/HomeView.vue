@@ -8,9 +8,9 @@
     </section>
     <section class="row" id="resume">
       <ResumeSection/>
-      <EducationSection/>
+      <!-- <EducationSection/>
       <ExperienceSection/>
-      <SkillSection/>
+      <SkillSection/> -->
     </section>
     <section class="row" id="project">
       <ProjectSection/>
@@ -31,9 +31,9 @@
 // @ is an alias to /src
 import LandingSection from '@/components/LandingSection.vue';
 import AboutSection from '@/components/AboutSection.vue';
-import EducationSection from '@/components/EducationSection.vue';
-import ExperienceSection from '@/components/ExperienceSection.vue';
-import SkillSection from '@/components/SkillSection.vue';
+// import EducationSection from '@/components/EducationSection.vue';
+// import ExperienceSection from '@/components/ExperienceSection.vue';
+// import SkillSection from '@/components/SkillSection.vue';
 import TestimonialSection from '@/components/TestimonialSection.vue';
 import ProjectSection from '@/components/ProjectSection.vue';
 import ReachMeSection from '@/components/ReachMeSection.vue';
@@ -44,9 +44,9 @@ export default {
   components: {
     LandingSection,
     AboutSection,
-    EducationSection,
-    ExperienceSection,
-    SkillSection,
+    // EducationSection,
+    // ExperienceSection,
+    // SkillSection,
     TestimonialSection,
     ProjectSection,
     ReachMeSection,

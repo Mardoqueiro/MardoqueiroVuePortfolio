@@ -4,7 +4,7 @@
       <div class="row align-items-center">
         <div class="col-sm-6">
           <div class="intro-text">
-          <h6>Hello, It's Me</h6>
+          <h5>Hello, It's Me</h5>
           <h1>Mardoquéiro D. Lukembeladio</h1>
           <h4 v-if="title">
              and I am
@@ -119,7 +119,5 @@ h1 {
  color: whitesmoke;
 }
 
-span {
-  color: var(--main-color);
-}
+
 </style>
