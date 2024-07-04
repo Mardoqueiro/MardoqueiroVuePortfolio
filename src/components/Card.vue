@@ -26,6 +26,7 @@
     <button class="card__button">Read more</button>
   </div>
 </article> -->
+
   </div>
 </template>
 
@@ -39,6 +40,8 @@ export default {
 .card {
     width: 18rem;
 }
+
+
 
 
 </style>
