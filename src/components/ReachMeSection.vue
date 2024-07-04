@@ -1,71 +1,116 @@
 <template>
-  <div class="container-1">
-    <div class="row">
-      <h1 class="display-1 text-center">Contact Me</h1>
-    </div>
-    <div class="row">
-      <div class="col-lg-6">
-        <div class="contact-info">
-          <h2>Contact Details</h2>
-          <p><i class="bi bi-telephone"></i> Phone: +27 69 587 2540</p>
-          <p>
-            <i class="bi bi-envelope-at"></i> Email: mordecai.dimbu@gmail.com
-          </p>
-          <p><i class="bi bi-geo-alt"></i> Address: Parow, Cape Town 7500</p>
-        </div>
-
-        <ul class="social-media-list">
-          <li>
-            <a
-              href="https://github.com/Mardoqueiro"
-              target="_blank"
-              class="contact-icon"
-            >
-              <i class="bi bi-github"></i
-            ></a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/feed/"
-              target="_blank"
-              class="contact-icon"
-            >
-              <i class="bi bi-linkedin" aria-hidden="true"></i
-            ></a>
-          </li>
-        </ul>
-      </div>
-      <div class="col-lg-6">
-        <div class="contact-form">
-          <form
-            action="https://www.formbackend.com/f/8ef8442d15f3fa15"
-            method="POST"
-          >
-            <label for="name"></label>
+  <div class="section">
+    <div class="container">
+      <div class="row full-height justify-content-center">
+        <div class="col-12 text-center align-self-center py-5">
+          <h1 class="display-1" data-aos="fade-left">Reach Me</h1>
+          <div class="section pb-5 pt-5 pt-sm-2 text-center">
+            <h6 class="mb-0 pb-3">
+              <span>Reach Me</span><span>Contact Info</span>
+            </h6>
             <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Full Name"
-              required
+              class="checkbox"
+              type="checkbox"
+              id="reg-log"
+              name="reg-log"
             />
-            <label for="email"></label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Email Address"
-              required
-            />
-            <label for="message"></label>
-            <textarea
-              id="message"
-              name="message"
-              placeholder="Enter Message"
-              required
-            ></textarea>
-            <button type="submit">Submit</button>
-          </form>
+            <label for="reg-log"></label>
+            <div class="card-3d-wrap mx-auto">
+              <div class="card-3d-wrapper">
+                <div class="card-back">
+                  <div class="center-wrap">
+                    <div class="section text-center">
+                      <h4 class="mb-4 pb-3">Contact Info</h4>
+                      <div class="contact-info">
+                        <p>
+                          <i class="bi bi-telephone"></i> Phone: +27 69 587 2540
+                        </p>
+                        <p>
+                          <i class="bi bi-envelope-at"></i>Email:<a
+                            href="https://mail.google.com/mail/u/0/#inbox"
+                            target="_blank"
+                          >
+                            mordecai.dimbu@gmail.com
+                          </a>
+                        </p>
+                        <p>
+                          <i class="bi bi-geo-alt"></i> Address:
+                          <a
+                            href="https://maps.app.goo.gl/cighvJoNnPx5ZBQ48"
+                            target="_blank"
+                          >
+                            Parow, Cape Town 7500</a
+                          >
+                        </p>
+                      </div>
+                      <div class="social-media">
+                        <a
+                          class="icon"
+                          href="https://www.linkedin.com/feed/"
+                          target="_blank"
+                          ><i class="bi bi-linkedin"></i
+                        ></a>
+                        <a
+                          class="icon"
+                          href="https://github.com/Mardoqueiro"
+                          target="_blank"
+                          ><i class="bi bi-github"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-front">
+                  <div class="center-wrap">
+                    <div class="section text-center">
+                      <h4 class="mb-4 pb-3">Reach Me</h4>
+                      <form
+                        action="https://www.formbackend.com/f/8ef8442d15f3fa15"
+                        method="POST"
+                      >
+                        <div class="form-group">
+                          <label for="name"></label>
+                          <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            class="form-style"
+                            placeholder="Full Name"
+                            required
+                          />
+                          <i class="input-icon uil uil-user"></i>
+                        </div>
+                        <div class="form-group mt-2">
+                          <label for="email"></label>
+                          <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            class="form-style"
+                            placeholder="Email Address"
+                            required
+                          />
+                          <i class="input-icon uil uil-at"></i>
+                        </div>
+                        <div class="form-group mt-2">
+                          <label for="message"></label>
+                          <textarea
+                            id="message"
+                            name="message"
+                            class="form-style"
+                            placeholder="Enter Message"
+                            required
+                          ></textarea>
+                          <i class="input-icon uil uil-comment"></i>
+                        </div>
+                        <button type="submit" class="btn mt-4">Submit</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -73,193 +118,16 @@
 </template>
 
 <style scoped>
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #000;
-  padding-bottom: 100px;
+span{
+  color: antiquewhite;
+  font-weight: normal;
+
 }
 
-#contact {
-  width: 100%;
-  height: 100%;
-}
-
-.section-header {
-  text-align: center;
-  margin: 0 auto;
-  padding: 40px 0;
-  font: 300 60px "Oswald", sans-serif;
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 6px;
-}
-
-.contact-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 0 auto;
-  padding: 20px;
-  position: relative;
-  max-width: 840px;
-}
-
-/* Left contact page */
-.form-horizontal {
-  /*float: left;*/
-  max-width: 400px;
-  font-family: "Lato";
-  font-weight: 400;
-}
-
-.form-control,
-textarea {
-  max-width: 400px;
-  background-color: #000;
-  color: #fff;
-  letter-spacing: 1px;
-}
-
-.send-button {
-  margin-top: 15px;
-  height: 34px;
-  width: 400px;
-  overflow: hidden;
-  transition: all 0.2s ease-in-out;
-}
-
-.alt-send-button {
-  width: 400px;
-  height: 34px;
-  transition: all 0.2s ease-in-out;
-}
-
-.send-text {
-  display: block;
-  margin-top: 10px;
-  font: 700 12px "Lato", sans-serif;
-  letter-spacing: 2px;
-}
-
-.alt-send-button:hover {
-  transform: translate3d(0px, -29px, 0px);
-}
-
-/* Begin Right Contact Page */
-.direct-contact-container {
-  max-width: 400px;
-}
-
-/* Location, Phone, Email Section */
-.contact-list {
-  list-style-type: none;
-  margin-left: -30px;
-  padding-right: 20px;
-}
-
-.list-item {
-  line-height: 4;
-  color: #aaa;
-}
-
-.contact-text {
-  font: 300 18px "Lato", sans-serif;
-  letter-spacing: 1.9px;
-  color: #bbb;
-}
-
-.place {
-  margin-left: 62px;
-}
-
-.phone {
-  margin-left: 56px;
-}
-
-.gmail {
-  margin-left: 53px;
-}
-
-.contact-text a {
-  color: #bbb;
-  text-decoration: none;
-  transition-duration: 0.2s;
-}
-
-.contact-text a:hover {
-  color: #fff;
-  text-decoration: none;
-}
-
-/* Social Media Icons */
-.social-media-list {
-  position: relative;
-  font-size: 22px;
-  text-align: center;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0;
-}
-
-.social-media-list li a {
+h4 {
   color: #fff;
 }
 
-.social-media-list li {
-  position: relative;
-  display: inline-block;
-  height: 60px;
-  width: 60px;
-  margin: 10px 3px;
-  line-height: 60px;
-  border-radius: 50%;
-  color: #fff;
-  background-color: rgb(27, 27, 27);
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-}
-
-.social-media-list li:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
-  border-radius: 50%;
-  opacity: 0;
-  box-shadow: 0 0 0 1px #fff;
-  transition: all 0.2s ease-in-out;
-}
-
-.social-media-list li:hover {
-  background-color: #fff;
-}
-
-.social-media-list li:hover:after {
-  opacity: 1;
-  transform: scale(1.12);
-  transition-timing-function: cubic-bezier(0.37, 0.74, 0.15, 1.65);
-}
-
-.social-media-list li:hover a {
-  color: #000;
-}
-
-.copyright {
-  font: 200 14px "Oswald", sans-serif;
-  color: #555;
-  letter-spacing: 1px;
-  text-align: center;
-}
-
-hr {
-  border-color: rgba(255, 255, 255, 0.6);
-}
-
-/* Begin Media Queries*/
 @media screen and (max-width: 850px) {
   .contact-wrapper {
     display: flex;
