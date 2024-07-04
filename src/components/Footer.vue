@@ -43,8 +43,9 @@ export default {
 };
 </script>
 
-<!-- <style scoped>
-body {
+<style scoped>
+ 
+ /* body {
     display:grid;
     grid-template-rows: 1fr 10rem auto;
     grid-template-areas:"main" "." "footer";
@@ -134,6 +135,6 @@ p {
     100% {
         bottom:var(--distance, 10rem);
     }
-}
+}  */
 
-</style> -->
+</style> 
