@@ -48,84 +48,9 @@ onMounted(() => {
   overflow: hidden; /* Hide content that overflows */
   animation: morph 3s linear infinite; /* Apply animation */
 }
-
 p {
   color: whitesmoke;
   margin-top: 100px;
 }
 
-/*KEYFRAMES ANIMATION */
-@keyframes slideRight {
-  0% {
-      transform: translateX(-100px);
-      opacity: 0;
-  }
-  
-  100% {
-      transform: translateX(0);
-      opacity: 1;
-  }
-}
-
-@keyframes slideLeft {
-  0% {
-      transform: translateX(100px);
-      opacity: 0;
-  }
-  
-  100% {
-      transform: translateX(0);
-      opacity: 1;
-  }
-}
-
-@keyframes slideTop {
-  0% {
-      transform: translateY(100px);
-      opacity: 0;
-  }
-  
-  100% {
-      transform: translateY(0);
-      opacity: 1;
-  }
-}
-
-@keyframes slideBottom {
-  0% {
-      transform: translateY(-100px);
-      opacity: 0;
-  }
-  
-  100% {
-      transform: translateY(0);
-      opacity: 1;
-  }
-}
-
-@keyframes zoomIn {
-  0% {
-      transform: scale(0);
-      opacity: 0;
-  }
-  
-  100% {
-      transform: scale(1);
-      opacity: 1;
-  }
-}
-
-@keyframes floatImage {
-  0% {
-      transform: translateY(0);
-  }
-
-  50% {
-      transform: translateY(-24px);
-  }
-
-  100% {
-      transform: translateY(0);
-  }
-}
 </style>
