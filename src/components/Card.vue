@@ -24,4 +24,6 @@ export default {
   box-shadow: 0 0 10px #F5CB86;
   background-color: #17182E;
 }
+
+
 </style>

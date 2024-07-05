@@ -3,7 +3,7 @@
       <div class="row">
         <div class="col">
           <div id="details">
-            <h1 class="display-1" data-aos="fade-left">Projects</h1>
+            <h1 class="display-1">Projects</h1>
             <p v-if="projects"></p>
             <div class="row gap-2 justify-content-center" v-if="projects?.length">
               <Card  v-for="proj in projects" :key="proj.id">

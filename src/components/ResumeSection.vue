@@ -6,7 +6,7 @@
     <div class="row">
       <div class="col">
         <div id="details">
-          <h1 class="display-1" data-aos="fade-right">Resume</h1>
+          <h1 class="display-1">Resume</h1>
           <!-- <p v-if="education">
                 </p> -->
           <h3>Education</h3>
