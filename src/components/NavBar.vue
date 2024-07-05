@@ -1,13 +1,13 @@
 <template>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-transparent sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
       <div class="container-fluid">
         <router-link class="navbar-brand" >
-          <!-- <img
+          <img
             src="https://mardoqueiro.github.io/all_images/E-com_/Retro Logo/Yellow_Orange_Retro_removebg-preview.png"
             alt="logo"
             class="img-fluid"
             loading="lazy"
-          /> -->
+          />
         </router-link>
         <button
           class="navbar-toggler"
@@ -23,8 +23,8 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <router-link class="nav-link active" aria-current="page" to="/..landing" 
-                >Home</router-link
+              <a class="nav-link active" aria-current="page" href="#landing" 
+                >Home</a
               >
             </li>
             <li class="nav-item">

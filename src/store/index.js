@@ -1,7 +1,7 @@
 import { createStore } from 'vuex'
 import axios from 'axios'
 import Swal from 'sweetalert2/dist/sweetalert2'
-const portfolioURL = 'https://mardoqueiro.github.io/Vue_EOMP_test/data/'
+const portfolioURL = 'https://mardoqueiro.github.io/database.VuejsEOMP/data/'
 export default createStore({
   state: {
     jobTitle: null,

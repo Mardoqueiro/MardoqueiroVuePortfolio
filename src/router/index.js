@@ -14,20 +14,25 @@ const routes = [
     component: () => import('@/views/HomeView.vue')
   },
   {
-    path: '/education',
-    name: 'education',
+    path: '/resume',
+    name: 'resume',
     component: () => import('@/views/HomeView.vue')
   },
-  {
-    path: '/experiences',
-    name: 'experiences',
-    component: () => import('@/views/HomeView.vue')
-  },
-  {
-    path: '/skills',
-    name: 'skills',
-    component: () => import('@/views/HomeView.vue')
-  },
+  // {
+  //   path: '/education',
+  //   name: 'education',
+  //   component: () => import('@/views/HomeView.vue')
+  // },
+  // {
+  //   path: '/experiences',
+  //   name: 'experiences',
+  //   component: () => import('@/views/HomeView.vue')
+  // },
+  // {
+  //   path: '/skills',
+  //   name: 'skills',
+  //   component: () => import('@/views/HomeView.vue')
+  // },
   {
     path: '/project',
     name: 'project',

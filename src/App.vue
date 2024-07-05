@@ -31,6 +31,12 @@ export default {
     experiences() {
       return this.$store.state.experiences
     },
+    education() {
+      return this.$store.state.education
+    },
+    projects() {
+      return this.$store.state.projects
+    },
     testimonials() {
       return this.$store.state.testimonials
     }
