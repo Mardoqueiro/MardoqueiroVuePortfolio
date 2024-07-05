@@ -17,8 +17,9 @@
         <div id="details">
           <h1 class="display-1" data-aos="fade-left">About</h1>
           <p v-if="about" class="lead">
-            {{ about }}
+            {{ about[0] }} 
           </p>
+          <!-- <p class="shadow">{{ about.quotes }}</p> -->
           <Spinner v-else />
         </div>
       </div>
@@ -40,7 +41,7 @@ onMounted(() => {
 <style scoped>
 .circle {
   /* Container for the circular image */
-  background: #17182E; /* Set background color */
+  background: #F5CB86; /* Set background color */
   width: 500px; /* Set width */
   height: 500px; /* Set height */
   border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%; /* Set border radius for multiple values */
@@ -48,41 +49,83 @@ onMounted(() => {
   animation: morph 3s linear infinite; /* Apply animation */
 }
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+p {
+  color: whitesmoke;
+  margin-top: 100px;
 }
 
-.about-section {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    background-color: #fff;
-    max-width: 800px;
-    margin: 50px auto;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+/*KEYFRAMES ANIMATION */
+@keyframes slideRight {
+  0% {
+      transform: translateX(-100px);
+      opacity: 0;
+  }
+  
+  100% {
+      transform: translateX(0);
+      opacity: 1;
+  }
 }
 
-.about-img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-right: 20px;
+@keyframes slideLeft {
+  0% {
+      transform: translateX(100px);
+      opacity: 0;
+  }
+  
+  100% {
+      transform: translateX(0);
+      opacity: 1;
+  }
 }
 
-.about-text {
-    flex: 1;
+@keyframes slideTop {
+  0% {
+      transform: translateY(100px);
+      opacity: 0;
+  }
+  
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
 }
 
-.about-text h2 {
-    margin-top: 0;
+@keyframes slideBottom {
+  0% {
+      transform: translateY(-100px);
+      opacity: 0;
+  }
+  
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
 }
 
-.about-text p {
-    line-height: 1.6;
+@keyframes zoomIn {
+  0% {
+      transform: scale(0);
+      opacity: 0;
+  }
+  
+  100% {
+      transform: scale(1);
+      opacity: 1;
+  }
 }
 
+@keyframes floatImage {
+  0% {
+      transform: translateY(0);
+  }
+
+  50% {
+      transform: translateY(-24px);
+  }
+
+  100% {
+      transform: translateY(0);
+  }
+}
 </style>
