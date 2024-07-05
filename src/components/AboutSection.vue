@@ -17,7 +17,7 @@
         <div id="details">
           <h1 class="display-1" data-aos="fade-left">About</h1>
           <p v-if="about" class="lead">
-            {{ about }}
+            {{ about[0] }}
           </p>
           <Spinner v-else />
         </div>

@@ -3,8 +3,6 @@
     <NavBar/>
     <main class="container-fluid">
       <router-view/>
-      <AboutSection/>
-      <Spinner/>
     </main>
     <Footer/>
   </div>
