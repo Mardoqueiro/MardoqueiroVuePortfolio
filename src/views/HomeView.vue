@@ -8,9 +8,6 @@
     </section>
     <section class="row" id="resume">
       <ResumeSection/>
-      <!-- <EducationSection/>
-      <ExperienceSection/>
-      <SkillSection/> -->
     </section>
     <section class="row" id="project">
       <ProjectSection/>
