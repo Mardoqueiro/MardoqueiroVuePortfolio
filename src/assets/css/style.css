@@ -87,9 +87,9 @@
     background-color: var(--second-bg-color);
   }
 
-  /* .navbar-nav {
+  .navbar-nav {
     margin: auto;
-  } */
+  }
 
   .nav-link {
     color: whitesmoke;
@@ -151,7 +151,6 @@ section {
   font-size: 120%;  
   overflow-x: hidden; 
 }
-
 .wrap { 
   display: flex; /* Display as a flex container */
   align-items: center; /* Vertically center content */
@@ -189,7 +188,6 @@ section {
   max-width: 1200px;
   margin: 0 auto;
 }
-
 .intro-text h1 {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
@@ -197,7 +195,6 @@ section {
   animation: slideLeft 1s ease forwards;
   animation-delay: 1s;
 }
-
 .intro-text h5,
 .intro-text p {
   margin-bottom: 0.5rem;
@@ -214,16 +211,13 @@ section {
 .social-media {
   margin: 1.5rem 0;
 }
-
 .social-media .icon {
   margin-right: 1rem;
   font-size: 1.5rem;
 }
-
 .btn-outline-dark {
   margin-top: 1rem;
 }
-
 /* Media Queries */
 @media (max-width: 1440px) {
   .intro-text h2 {
@@ -281,7 +275,6 @@ section {
     font-size: 0.75rem;
   }
 }
-
 @media (max-width: 320px) {
   .intro-text h2 {
     font-size: 1.25rem;
@@ -291,11 +284,9 @@ section {
     font-size: 0.75rem;
   }
 }
-
 .col-sm-6 {
   color: var(--text-color);
 }
-
 .intro-text {
   text-align: left;
   margin: 20px; 
@@ -370,29 +361,20 @@ grid-template-areas:
   color: var(--second-bg-color); 
 }
 
+
+/*---------------------------------------
+  #FOOTER
+----------------------------------------*/
+footer {
+  background-color: var(--second-bg-color);
+  color: var(--text-color);
+  padding: 1rem;
+  text-align: center;
+}
+
 /*---------------------------------------
   #Section  
 ----------------------------------------*/
-
-/* nav {
-  background-color: var(--bg-color);
-  text-align: center;
-  background: linear-gradient(-45deg, #17182E, #0A0F24, #1B1A55, #1c1a5d);
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
-  z-index: -1;
-}
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-} */
 
 /*---------------------------------------
   #CARD  
@@ -405,6 +387,13 @@ grid-template-areas:
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease; 
   overflow: hidden; 
+  margin: 20px;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 10px;
+  flex-basis: calc(29% - 20px);
 }
 
 .card:hover {
@@ -419,6 +408,9 @@ grid-template-areas:
 
 .card-content {
   padding: 20px;
+  text-align: left;
+  position: relative;
+  z-index: 1;
 }
 
 .card-title {
@@ -524,8 +516,6 @@ h6 span{
 .checkbox:checked + label:before {
   transform: translateX(44px) rotate(-270deg);
 }
-
-
 .card-3d-wrap {
   position: relative;
   width: 440px;
@@ -581,8 +571,6 @@ h6 span{
   z-index: 20;
   display: block;
 }
-
-
 .form-group{ 
   position: relative;
   display: block;
