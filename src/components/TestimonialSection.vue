@@ -19,7 +19,7 @@
                 />
               </template>
               <template #cardBody>
-                <h5 class="card-title">{{ testimonial.name }}</h5>
+                <h5 class="card-title">{{ testimonial.name }} {{ testimonial.surname }}</h5>
                 <p class="shadow">{{ testimonial.quotes }}</p>
                 <!-- <p class="shadow">R {{ testimonials.amount }}</p> -->
               </template>
@@ -73,5 +73,7 @@ onMounted(() => {
   </script> -->
 
 <style scoped>
-
+h5 {
+  color: #F9F2F2;
+}
 </style>
