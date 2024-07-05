@@ -1,14 +1,14 @@
 <template>
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
       <div class="container-fluid">
-        <router-link class="navbar-brand" >
+        <!-- <router-link class="navbar-brand" >
           <img
             src="https://mardoqueiro.github.io/all_images/E-com_/Retro Logo/Yellow_Orange_Retro_removebg-preview.png"
             alt="logo"
             class="img-fluid"
             loading="lazy"
           />
-        </router-link>
+        </router-link> -->
         <button
           class="navbar-toggler"
           type="button"
@@ -47,3 +47,7 @@
       </div>
     </nav>
   </template>
+
+<style scoped>
+
+</style>

@@ -1,5 +1,6 @@
 <template>
   <div>
+
     <!-- Education Section -->
     <div class="container">
     <div class="row">
@@ -33,6 +34,7 @@
       </div>
     </div>
   </div>
+
   <!-- Experience Section -->
   <div class="container">
     <div class="row">
@@ -51,8 +53,8 @@
               </template>
               <template #cardBody>
                 <h5 class="card-title">{{ exp.companyName }}</h5>
-                <p class="shadow">{{ exp.quotes }}</p>
-                <!-- <p class="shadow">R {{ exp.amount }}</p> -->
+                <p class="shadow">Title: {{ exp.jobTitle }}</p>
+                <p>Duties: {{ exp.duties }}</p>
               </template>
             </Card>
           </div>
@@ -61,7 +63,8 @@
       </div>
     </div>
   </div>
-  <!-- Skills Section -->
+  
+<!-- Skills Section -->
   <div class="container">
     <div class="row">
       <div class="col">
@@ -106,6 +109,13 @@ onMounted(() => {
 });
 </script>
 
-<style>
+<style scoped>
+h5 {
+  color: #F9F2F2;
+}
 
+h3 {
+  font-family: 'Poppin' sans-serif;
+  color: white;
+}
 </style>

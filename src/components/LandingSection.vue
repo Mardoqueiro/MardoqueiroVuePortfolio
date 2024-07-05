@@ -11,7 +11,6 @@
               <span>{{ title }}</span>
             </h4>
             <Spinner v-else />
-          <!-- <h4>And I'm a <span>Full-stack Developer apprentice</span></h4> -->
           <p>
             Welcome to my portfolio website! Explore a curated collection of my
             work, crafted with passion and dedication. From design to
@@ -28,7 +27,7 @@
           <div class="social-media">
             <a
               class="icon"
-              href="https://www.linkedin.com/feed/"
+              href="https://www.linkedin.com/in/mardoqu%C3%A9iro-dimbu-55b142283/"
               target="_blank"
               ><i class="bi bi-linkedin"></i
             ></a>
@@ -40,7 +39,9 @@
             ></a>
           </div>
           <div>
-            <button class="btn btn-outline-dark btn-lg">Download Cv</button>
+            <button class="btn btn-outline-dark btn-lg" href="#reachMe">
+              <a href="#reachMe">Reach Me</a>
+            </button>
           </div>
         </div>
       </div>
@@ -48,7 +49,7 @@
           <div class="wrap">
             <div class="circle">
               <img
-                src="https://mardoqueiro.github.io/all_images/Vue.EOMP/Portfolio.images/portfolio.bgRemoved.png"
+                src="https://mardoqueiro.github.io/all_images/Vue.EOMP/Portfolio.images/MordecaiPortfolio.png"
                 alt="profile"
                 class="img-fluid"
                 loading="lazy"

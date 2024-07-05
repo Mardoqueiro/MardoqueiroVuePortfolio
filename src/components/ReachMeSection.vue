@@ -27,7 +27,7 @@
                         </p>
                         <p>
                           <i class="bi bi-envelope-at"></i>Email:<a
-                            href="https://mail.google.com/mail/u/0/#inbox"
+                            href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSMTgtzpBJrtbstKWFKtVJDPfWNZrBHctjpwZnvcwDVZMqSdFGhTMNVsxRtxLZJjrFzrjNWM"
                             target="_blank"
                           >
                             mordecai.dimbu@gmail.com
@@ -46,7 +46,7 @@
                       <div class="social-media">
                         <a
                           class="icon"
-                          href="https://www.linkedin.com/feed/"
+                          href="https://www.linkedin.com/in/mardoqu%C3%A9iro-dimbu-55b142283/"
                           target="_blank"
                           ><i class="bi bi-linkedin"></i
                         ></a>

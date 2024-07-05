@@ -44,24 +44,14 @@ export default {
 </script>
 
 <style scoped>
- 
- /* body {
-    display:grid;
-    grid-template-rows: 1fr 10rem auto;
-    grid-template-areas:"main" "." "footer";
-    overflow-x:hidden;
-    background:#F5F7FA;
-    min-height:100vh;
-    font-family: 'Poppins', sans-serif;
-}
 .footer {
     z-index: 1;
     --footer-background:#F5CB86;
     display:grid;
     position: relative;
     grid-area: footer;
-    min-height:12rem;}
-        
+    min-height:5rem;}
+/*         
 .bubbles {
     position: absolute;
     top:0;
