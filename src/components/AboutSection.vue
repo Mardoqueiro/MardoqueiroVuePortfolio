@@ -1,19 +1,7 @@
 <template>
   <div class="container">
     <div class="row">
-      <!-- <div class="col">
-        <div class="wrap">
-          <div class="circle">
-            <img
-              src="https://mardoqueiro.github.io/all_images/Vue.EOMP/Portfolio.images/portfolio.bgRemoved.png"
-              alt="profile"
-              class="img-fluid"
-              loading="lazy"
-            />
-          </div>
-        </div>
-      </div> -->
-      <div class="col-sm-6 text-center">
+      <!-- <div class="col-sm-6 text-center">
         <div class="wrap">
           <div class="circle">
             <img
@@ -24,7 +12,7 @@
             />
           </div>
         </div>
-      </div>
+      </div> -->
       <div class="col">
         <div id="details">
           <h1 class="display-1">About</h1>
@@ -34,20 +22,29 @@
           <!-- <p class="shadow">{{ about.quotes }}</p> -->
           <Spinner v-else />
         </div>
-      </div>
-      <!-- Skills Section -->
-      <div class="row">
-        <div class="col">
-          <div id="details">
-            <h3>Skills</h3>
-            <div class="skills-container" v-if="skills?.length">
-              <div v-for="skill in skills" :key="skill.id" class="skill-badge">
-                <img :src="skill.image" loading="lazy" class="skill-image" :alt="skill.title" />
-                <span class="skill-title">{{ skill.title }}</span>
-                <!-- <span class="skill-experience">{{ skill.experience }}</span> -->
+        <!-- Skills Section -->
+        <div class="row">
+          <div class="col">
+            <div id="details">
+              <h3>Skills</h3>
+              <div class="skills-container" v-if="skills?.length">
+                <div
+                  v-for="skill in skills"
+                  :key="skill.id"
+                  class="skill-badge"
+                >
+                  <img
+                    :src="skill.image"
+                    loading="lazy"
+                    class="skill-image"
+                    :alt="skill.title"
+                  />
+                  <span class="skill-title">{{ skill.title }}</span>
+                  <!-- <span class="skill-experience">{{ skill.experience }}</span> -->
+                </div>
               </div>
+              <Spinner v-else />
             </div>
-            <Spinner v-else />
           </div>
         </div>
       </div>
@@ -71,7 +68,7 @@ onMounted(() => {
 
 <style scoped>
 .circle {
-  background: #17182E;
+  background: #17182e;
   width: 500px;
   height: 500px;
   border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
@@ -95,7 +92,7 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #17182E;
+  background-color: #17182e;
   width: 120px;
   height: 120px;
   border-radius: 10px;
@@ -132,7 +129,7 @@ p {
   opacity: 0.8;
 }
 
-h3{
+h3 {
   color: #f9f7f4;
 }
 </style>
