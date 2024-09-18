@@ -71,7 +71,7 @@ onMounted(() => {
 
 <style scoped>
 .circle {
-  background: #f5cb86;
+  background: #17182E;
   width: 500px;
   height: 500px;
   border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
@@ -95,7 +95,7 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #f5cb86;
+  background-color: #17182E;
   width: 120px;
   height: 120px;
   border-radius: 10px;
@@ -130,5 +130,9 @@ p {
 .skill-experience {
   font-size: 0.8rem;
   opacity: 0.8;
+}
+
+h3{
+  color: #f9f7f4;
 }
 </style>
