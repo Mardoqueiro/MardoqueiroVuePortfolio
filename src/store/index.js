@@ -9,7 +9,7 @@ export default createStore({
     education: null,
     experiences: null,
     skills: null,
-    testimonials: null,
+    // testimonials: null,
     projects: null
   },
   getters: {
@@ -30,9 +30,9 @@ export default createStore({
     setSkills(state, value) {
       state.skills = value
     },
-    setTestimonials(state, value) {
-      state.testimonials = value
-    },
+    // setTestimonials(state, value) {
+    //   state.testimonials = value
+    // },
     setProjects(state, value) {
       state.projects = value
     }    
@@ -103,19 +103,19 @@ export default createStore({
         })
       }  
     },
-    async fetchTestimonials(context) {
-      try {
-        let { testimonials } = await (await axios.get(portfolioURL)).data
-        context.commit('setTestimonials', testimonials)
-      } catch (e) {
-        Swal.fire({
-          title: 'Error',
-          text: 'Failed to fetch the data - testimonials',
-          icon: 'error',
-          timer : 2000
-        })
-      }  
-    },
+    // async fetchTestimonials(context) {
+    //   try {
+    //     let { testimonials } = await (await axios.get(portfolioURL)).data
+    //     context.commit('setTestimonials', testimonials)
+    //   } catch (e) {
+    //     Swal.fire({
+    //       title: 'Error',
+    //       text: 'Failed to fetch the data - testimonials',
+    //       icon: 'error',
+    //       timer : 2000
+    //     })
+    //   }  
+    // },
     async fetchProjects(context) {
       try {
         let { projects } = await (await axios.get(portfolioURL)).data

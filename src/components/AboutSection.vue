@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="row">
-      <div class="col">
+      <!-- <div class="col">
         <div class="wrap">
           <div class="circle">
             <img
@@ -12,7 +12,19 @@
             />
           </div>
         </div>
-      </div>
+      </div> -->
+      <div class="col-sm-6 text-center">
+          <div class="wrap">
+            <div class="circle">
+              <img
+                src="https://mardoqueiro.github.io/all_images/Vue.EOMP/Portfolio.images/MordecaiPortfolio.png"
+                alt="profile"
+                class="img-fluid"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
       <div class="col">
         <div id="details">
           <h1 class="display-1">About</h1>
@@ -23,30 +35,57 @@
           <Spinner v-else />
         </div>
       </div>
+      <!-- Skills Section -->
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div id="details">
+          <!-- <h1 class="display-1">Skills</h1> -->
+          <p v-if="skills"></p>
+          <h3>Skills</h3>
+          <div class="row gap-2 justify-content-center" v-if="skills?.length">
+            <Card v-for="skills in skills" :key="skills.id">
+              <template #cardHeader>
+                <img :src="skills.image" loading="lazy" class="img-fluid" />
+              </template>
+              <template #cardBody>
+                <h5 class="card-title">{{ skills.title }}</h5>
+                <p class="shadow">{{ skills.experience }}</p>
+                <!-- <p class="shadow">R {{ skills.amount }}</p> -->
+              </template>
+            </Card>
+          </div>
+          <Spinner v-else />
+        </div>
+      </div>
+    </div>
+  </div>
     </div>
   </div>
 </template>
 
 <script setup>
 import Spinner from "./Spinner.vue";
+import Card from "./Card.vue";
 import { computed, onMounted } from "vue";
 import { useStore } from "vuex";
 const store = useStore();
 const about = computed(() => store.state.about);
+const skills = computed(() => store.state.skills);
 onMounted(() => {
   store.dispatch("fetchAbout");
+  store.dispatch("fetchSkills");
 });
 </script>
 
 <style scoped>
 .circle {
-  /* Container for the circular image */
-  background: #F5CB86; /* Set background color */
-  width: 500px; /* Set width */
-  height: 500px; /* Set height */
-  border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%; /* Set border radius for multiple values */
-  overflow: hidden; /* Hide content that overflows */
-  animation: morph 3s linear infinite; /* Apply animation */
+  background: #F5CB86; 
+  width: 500px;
+  height: 500px;
+  border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+  overflow: hidden; 
+  animation: morph 3s linear infinite;
 }
 p {
   color: whitesmoke;

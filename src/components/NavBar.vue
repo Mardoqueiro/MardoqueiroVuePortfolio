@@ -1,14 +1,15 @@
 <template>
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
       <div class="container-fluid">
-        <!-- <router-link class="navbar-brand" >
-          <img
+        <router-link class="navbar-brand" >
+          M Dimbu
+          <!-- <img
             src="https://mardoqueiro.github.io/all_images/E-com_/Retro Logo/Yellow_Orange_Retro_removebg-preview.png"
             alt="logo"
             class="img-fluid"
             loading="lazy"
-          />
-        </router-link> -->
+          /> -->
+        </router-link>
         <button
           class="navbar-toggler"
           type="button"
@@ -36,9 +37,9 @@
             <li class="nav-item">
               <a class="nav-link" href="#project">Project</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="#testimonial">Testimonial</a>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link" href="#reachMe">Reach Me</a>
             </li>

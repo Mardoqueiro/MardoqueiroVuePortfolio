@@ -6,7 +6,7 @@
     <div class="row">
       <div class="col">
         <div id="details">
-          <h1 class="display-1">Resume</h1>
+          <h1 class="display-1">Education & Experiences</h1>
           <!-- <p v-if="education">
                 </p> -->
           <h3>Education</h3>
@@ -65,11 +65,11 @@
   </div>
   
 <!-- Skills Section -->
-  <div class="container">
+  <!-- <div class="container">
     <div class="row">
       <div class="col">
         <div id="details">
-          <!-- <h1 class="display-1">Skills</h1> -->
+          <h1 class="display-1">Skills</h1>
           <p v-if="skills"></p>
           <h3>Skills</h3>
           <div class="row gap-2 justify-content-center" v-if="skills?.length">
@@ -80,7 +80,7 @@
               <template #cardBody>
                 <h5 class="card-title">{{ skills.title }}</h5>
                 <p class="shadow">{{ skills.experience }}</p>
-                <!-- <p class="shadow">R {{ skills.amount }}</p> -->
+                <p class="shadow">R {{ skills.amount }}</p>
               </template>
             </Card>
           </div>
@@ -88,7 +88,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
   </div>
 </template>
@@ -101,11 +101,11 @@ import { useStore } from "vuex";
 const store = useStore();
 const education = computed(() => store.state.education);
 const experiences = computed(() => store.state.experiences);
-const skills = computed(() => store.state.skills);
+// const skills = computed(() => store.state.skills);
 onMounted(() => {
   store.dispatch("fetchEducation");
   store.dispatch("fetchExperiences");
-  store.dispatch("fetchSkills");
+  // store.dispatch("fetchSkills");
 });
 </script>
 
