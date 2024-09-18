@@ -3,10 +3,10 @@
     <div class="container">
       <div class="row full-height justify-content-center">
         <div class="col-12 text-center align-self-center py-5">
-          <h1 class="display-1">Reach Me</h1>
+          <h1 class="display-1">Contact Me</h1>
           <div class="section pb-5 pt-5 pt-sm-2 text-center">
             <h6 class="mb-0 pb-3">
-              <span>Reach Me</span><span>Contact Info</span>
+              <span>Contact Me</span><span>Contact Info</span>
             </h6>
             <input
               class="checkbox"
@@ -63,7 +63,7 @@
                 <div class="card-front">
                   <div class="center-wrap">
                     <div class="section text-center">
-                      <h4 class="mb-4 pb-3">Reach Me</h4>
+                      <h4 class="mb-4 pb-3">Contact Me</h4>
                       <form
                         action="https://www.formbackend.com/f/8ef8442d15f3fa15"
                         method="POST"
