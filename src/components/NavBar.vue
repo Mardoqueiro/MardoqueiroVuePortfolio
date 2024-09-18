@@ -1,15 +1,7 @@
 <template>
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
       <div class="container-fluid">
-        <router-link class="navbar-brand" >
-          M Dimbu
-          <!-- <img
-            src="https://mardoqueiro.github.io/all_images/E-com_/Retro Logo/Yellow_Orange_Retro_removebg-preview.png"
-            alt="logo"
-            class="img-fluid"
-            loading="lazy"
-          /> -->
-        </router-link>
+        <a class="navbar-brand" href="/">Mardoquéiro Dimbu</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -24,24 +16,22 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#landing" 
-                >Home</a
-              >
+              <a class="nav-link" href="#landing" active-class="active-link">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
+              <a class="nav-link" href="#about" active-class="active-link">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#resume">Resume</a>
+              <a class="nav-link" href="#resume" active-class="active-link">Resume</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#project">Project</a>
+              <a class="nav-link" href="#project" active-class="active-link">Project</a>
             </li>
             <!-- <li class="nav-item">
               <a class="nav-link" href="#testimonial">Testimonial</a>
             </li> -->
             <li class="nav-item">
-              <a class="nav-link" href="#reachMe">Reach Me</a>
+              <a class="nav-link" href="#reachMe" active-class="active-link">Contact</a>
             </li>
           </ul>
         </div>
@@ -50,5 +40,14 @@
   </template>
 
 <style scoped>
-
+.navbar-nav {
+  display: flex;
+  justify-content: flex-start;
+  width: 10%;
+  padding-right: 10rem; 
+}
+.nav-item {
+  margin-left: 1.5rem;
+}
 </style>
+
