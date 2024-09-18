@@ -22,7 +22,7 @@
               <a class="nav-link" href="#about" active-class="active-link">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#resume" active-class="active-link">Resume</a>
+              <a class="nav-link" href="#resume" active-class="active-link">Eduction</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#project" active-class="active-link">Project</a>

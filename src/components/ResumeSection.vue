@@ -118,4 +118,12 @@ h3 {
   font-family: 'Poppin' sans-serif;
   color: white;
 }
+
+img {
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center;
+  animation: slideBottom 1s ease forwards;
+  animation-delay: .7s;
+}
 </style>

@@ -26,7 +26,7 @@
         <div class="row">
           <div class="col">
             <div id="details">
-              <h3>Skills</h3>
+              <h3>Technical & Soft Skills</h3>
               <div class="skills-container" v-if="skills?.length">
                 <div
                   v-for="skill in skills"
