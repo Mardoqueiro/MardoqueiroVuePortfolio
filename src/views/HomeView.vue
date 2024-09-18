@@ -12,9 +12,9 @@
     <section class="row" id="project">
       <ProjectSection/>
     </section>
-    <section class="row" id="testimonial">
+    <!-- <section class="row" id="testimonial">
       <TestimonialSection/>
-    </section>
+    </section> -->
     <section class="row" id="reachMe">
       <ReachMeSection/>
     </section>
@@ -25,7 +25,7 @@
 // @ is an alias to /src
 import LandingSection from '@/components/LandingSection.vue';
 import AboutSection from '@/components/AboutSection.vue';
-import TestimonialSection from '@/components/TestimonialSection.vue';
+// import TestimonialSection from '@/components/TestimonialSection.vue';
 import ProjectSection from '@/components/ProjectSection.vue';
 import ReachMeSection from '@/components/ReachMeSection.vue';
 import ResumeSection from '@/components/ResumeSection.vue';
@@ -35,7 +35,7 @@ export default {
   components: {
     LandingSection,
     AboutSection,
-    TestimonialSection,
+    // TestimonialSection,
     ProjectSection,
     ReachMeSection,
     ResumeSection
