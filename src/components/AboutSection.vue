@@ -1,18 +1,7 @@
 <template>
   <div class="container">
     <div class="row">
-      <!-- <div class="col-sm-6 text-center">
-        <div class="wrap">
-          <div class="circle">
-            <img
-              src="https://mardoqueiro.github.io/all_images/Vue.EOMP/Portfolio.images/MordecaiPortfolio.png"
-              alt="profile"
-              class="img-fluid"
-              loading="lazy"
-            />
-          </div>
-        </div>
-      </div> -->
+      
       <div class="col">
         <div id="details">
           <h1 class="display-1">About</h1>
