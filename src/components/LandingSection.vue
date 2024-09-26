@@ -39,8 +39,8 @@
             ></a>
           </div>
           <div>
-            <button class="btn btn-outline-dark btn-lg" href="#reachMe">
-              <a href="#reachMe">Reach Me</a>
+            <button class="btn btn-outline-dark btn-lg">
+             <a href="#reachMe">Contact Me</a>
             </button>
           </div>
         </div>
@@ -96,29 +96,35 @@ onMounted(() => {
 </script>
 
 <style scoped>
-
-@keyframes glow {
-  0% {
-    box-shadow: 0 0 0 0 #f5cb86;
-  }
-  50% {
-    box-shadow: 0 0 20px 5px #f5cb86;
-  }
-  100% {
-    box-shadow: 0 0 0 0 #f5cb86;
-  }
+ 
+button {
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #F5CB86;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
 }
 
-.btn:hover,
-.btn:hover a {
-  animation: glow 1s;
-  box-shadow: 0 0 1rem var(--main-color);
+button:hover {
+  background-color: #F5CB86;
+  box-shadow: 0px 15px 20px rgba(174, 193, 185, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
 }
 
+button:active {
+  transform: translateY(-1px);
+}
 h1 {
   font-family: 'Poppins', sans-serif;
  color: whitesmoke;
 }
-
-
 </style>
